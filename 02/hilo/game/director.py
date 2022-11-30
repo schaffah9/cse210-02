@@ -35,7 +35,7 @@ class Director:
         """
         print('Welcome to HiLo. Let\'s begin')
         while self.is_playing:
-            if len(self.deck) < 5:
+            if len(self.deck.cards) < 5:
                 self.deck = Deck()
 
             self.next_card = self.deck.draw_card()
